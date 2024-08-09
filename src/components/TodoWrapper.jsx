@@ -10,6 +10,10 @@ export const TodoWrapper = () => {
   const [todos, setTodos] = useState([]);
 
   const addTodo = (todo) => {
+    if(todo.trim().length === 0) {
+      return;
+    }
+
     setTodos([
       ...todos,
       { id: uuidv4(), task: todo, isCompleted: false, isEditing: false },
