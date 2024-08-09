@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-key */
 import { useState } from "react";
 import { TodoForm } from "./TodoForm";
 import { v4 as uuidv4 } from "uuid";
